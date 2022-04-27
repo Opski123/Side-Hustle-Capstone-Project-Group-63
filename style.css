@@ -1,0 +1,356 @@
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 3rem;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.topnav ul li {
+display: inline-block;
+margin-left: 1rem;
+}
+a {
+    color:hsl(0, 0%, 100%) ;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+a:hover {
+    color:  hsl(176, 68%, 64%);
+    transition: 600ms;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.intro>div {
+    width: 60%;
+}
+.intro-content {
+    position: relative;
+    margin-top: 2rem ;
+}
+.intro img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    }
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.7;
+}
+h1{
+    font-size: 1.7rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+p {
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0.5rem 0;
+}
+.sh1 {
+    font-size: 1rem;
+}
+button {
+    border-radius: 30px;
+    background: hsl(176, 68%, 64%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    height: 3rem;
+    padding: 0 12px;
+}
+button:hover{
+    cursor: pointer;
+    background: hsl(198, 60%, 50%);
+}
+.sh2 {
+    width: 15rem;
+    max-width: 80%;
+}
+.attribute {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.attribute-item {
+    width: 33.33%;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    margin: 2rem;
+
+
+}
+.attribute-item-img {
+    margin-top: 2rem;
+}
+.productive {
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+}
+.productive-content {
+    padding-left: 4rem;
+}
+.productive-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.content-link {
+    font-family: 'Open Sans', sans-serif;
+    color:  hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.content-link:hover {
+    color: hsl(0, 0%, 100%);
+    transition: 600ms;
+    border-bottom-color: hsl(0, 0%, 100%);
+}
+.quotation-img {
+    margin-top: 70px;
+    padding: 3rem 0 0 3rem;
+}
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 3rem 3rem;
+}
+.testimonial-item {
+    margin-left: 3.5rem;
+    flex-basis: 33.33%;
+    border-radius: 5px;
+    background-color: hsl(219, 30%, 18%);
+    box-shadow: hsl(216, 53%, 9%) 2px 2px 20px 2px ;
+    padding: 2.5rem 2rem;
+}
+.testimonial-item:first-child {
+    margin-left: 0;
+}
+.testimonial-profile {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.testimonial-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   
+}
+.testimonial-item-owner {
+margin-left: 1rem;
+}
+.sign-up {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up-item {
+    text-align: center;
+    background-color: hsl(219, 30%, 18%);
+    position: absolute;
+    top: 50px;
+    max-width: 800px;
+    width: 66.66%;
+    min-width: 300px;
+    padding:  3.5rem 3rem;
+    box-shadow: hsl(216, 53%, 9%) 2px 2px 30px 2px;
+    border-radius: 10px; 
+    margin-top: 100px; 
+}
+.sign-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.email{
+    width: 80%;
+    max-width: 600px;
+    border-radius: 30px;
+    height: 2.5rem;
+}
+.sign-up-btn {
+    width: 20%;
+    max-width: 250px;
+    margin-left: 1rem;
+}
+.contact {
+    background-color: hsl(216, 53%, 9%);
+    margin-top: 300px;
+    padding: 15rem 4rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "logo logo logo logo" "location contacts links social";
+}
+.contact-logo {
+    grid-area: logo;
+    margin-bottom: 20px;
+}
+.contact-location {
+    grid-area: location;
+}
+.contact-info-contacts-item,
+.contact-location-item {
+    display: flex;
+}
+.img-footer {
+    margin-right: 1rem;
+    width: 18px;
+    height: 18px;
+    line-height: 1.5;
+}
+.contact-info-contacts {
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-links {
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+   
+}
+.contact-links-list:first-child {
+    margin-right: 2.5rem;
+}
+.contact-links-list {
+    list-style: none;
+    line-height: 2rem;
+    
+}
+.contact-social-links {
+    justify-content: center;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.icon-link{
+    border: solid hsl(0, 0%, 100%) 3px;
+    padding: 7px 10px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+/*---------media queries---------*/
+@media (max-width: 1000px) {
+    header {
+        padding: 2.5rem 2rem;
+    }
+    header img,
+    footer img {
+        width: 117px;
+        height: auto;
+    }
+    section {
+        padding: 2.5rem 2rem;
+    }
+    .intro>div,
+    .attribute-item {
+        width: 100%;
+    }
+    .testimonial,
+    .productive {
+        flex-direction: column;
+    }
+    .attribute-item {
+        padding: 2rem 0;
+    }
+    .productive-content {
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .testimonial-item {
+        margin-left: 0;
+        margin-top: 3.5rem;
+        width: 80%;
+    }
+    .sign-up-item {
+        width: 80%;
+        padding: 2.5rem 2rem;
+    }
+    .sign-up-form {
+        flex-direction: column;
+    }
+    .email {
+        max-width: 100%;
+        width: auto;
+        min-width: 100%;
+    }
+    .sign-up-btn {
+        max-width: 100%;
+        width: auto;
+        min-width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .contact {
+        padding: 20rem 3rem 1rem;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "logo" "location" "contacts" "links" "social";
+    }
+    .contact>div,
+    .contact>nav {
+        padding: 1rem 0;
+    }
+    .contact-info-contacts {
+        align-items: flex-start;
+    }
+    .contact-links {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contact-links-list:first-child {
+        margin-bottom: 1rem;
+    }
+    .contact-info-social-links {
+        justify-content: center;
+    }
+}
+@media (max-width: 375px) {
+    section {
+        padding: 2.5rem 2rem;
+    }
+    .sign-up-item {
+        min-width: 50%;
+        max-width: 70%;
+    }
+    .contact{
+        padding: 25rem 3rem 1rem;
+    }
+    .attribute-item-img {
+        margin-top: 0;
+    }
+}
